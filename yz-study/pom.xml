@@ -5,6 +5,23 @@
 	<artifactId>yz-study</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
+	<name>yz-study</name>
+	<url>http://maven.apache.org</url>
+	
+	<build>
+		<finalName>yz-study</finalName>
+		<resources>
+			<resource>
+				<targetPath>${project.build.directory}/classes</targetPath>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+				<includes>
+					<include>**/*.xml</include>
+					<include>**/*.properties</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -49,5 +66,9 @@
 			<version>${spring.version}</version>
 		</dependency>
 		<!-- spring end -->
+		
+	
+	
+	
 	</dependencies>
 </project>
